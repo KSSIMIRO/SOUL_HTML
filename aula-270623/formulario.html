@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade Formulario</title>
+</head>
+<body>
+<center>
+    <h1>Registre-se</h1>
+    <form action="/aula-270623/login.html">
+        <fieldset style = "width: 50%; margin: 0px auto;">
+        <legend>Cadastro</legend>
+            <fieldset style = "width: 50%; margin: 0px auto;">
+                <legend>Seus Dasos Pessoais</legend>
+                    <label for="nome">*Nome:</label> <br>
+                    <input type="text" name="nome" id="nome" maxlength="10" placeholder="Digite aqui seu nome completo" required> 
+                    <br>
+                    <label for="email">*E-mail:</label> <br>
+                    <input type="email" name="email" id="email" placeholder="kssimiro@example.com" required>
+                    <br>
+                    
+                    <label for="senha">*Senha:</label> <br>
+                    <input type="password" name="senha" id="Senha" minlength="6" required> 
+        </fieldset>
+            <br>
+        <fieldset style = "width: 50%; margin: 0px auto;">
+            <legend>Seu Endereço</legend>
+            <labe for="uf">*UF</labe> <br>
+            <select required>
+                <option disabled selected>Selecione um estado</option> 
+                <option value="ac">Acre</option> 
+                <option value="al">Alagoas</option> 
+                <option value="am">Amazonas</option> 
+                <option value="ap">Amapá</option> 
+                <option value="ba">Bahia</option> 
+                <option value="ce">Ceará</option> 
+                <option value="df">Distrito Federal</option> 
+                <option value="es">Espírito Santo</option> 
+                <option value="go">Goiás</option> 
+                <option value="ma">Maranhão</option> 
+                <option value="mt">Mato Grosso</option> 
+                <option value="ms">Mato Grosso do Sul</option> 
+                <option value="mg">Minas Gerais</option> 
+                <option value="pa">Pará</option> 
+                <option value="pb">Paraíba</option> 
+                <option value="pr">Paraná</option> 
+                <option value="pe">Pernambuco</option> 
+                <option value="pi">Piauí</option> 
+                <option value="rj">Rio de Janeiro</option> 
+                <option value="rn">Rio Grande do Norte</option> 
+                <option value="ro">Rondônia</option> 
+                <option value="rs">Rio Grande do Sul</option> 
+                <option value="rr">Roraima</option> 
+                <option value="sc">Santa Catarina</option> 
+                <option value="se">Sergipe</option> 
+                <option value="sp">São Paulo</option> 
+                <option value="to">Tocantins</option>
+            </select>
+            <br>
+            <label for="cidade">*Cidade</label> <br>
+            <input type="text" name="cidade" id="cidade" placeholder="Sua Cidade" required>
+            <br>
+            <label for="Rua">*Rua</label> <br>
+            <input type="text" name="Rua" id="Rua" placeholder="Sua Rua" required>
+            <br>
+            <label for="numero">*numero</label> <br>
+            <input type="text" name="numero" id="numero" placeholder="Número da sua Casa" required>
+            <br>
+            <label for="cep">*CEP</label> <br>
+            <input type="text" name="cep" id="cep" pattern="[0-9][.--],{9,10}" required>
+        </fieldset>
+        <br>
+        <fieldset style = "width: 50%; margin: 0px auto;">
+            <legend>Fale um pouco sobre você</legend>
+            <br>
+            <label for="bio">*Sua Bio</label> <br>
+            <textarea name="bio" id="bio" cols="30" rows="3" placeholder="Fale um pouco sobre você"></textarea required> 
+            <br>
+            <label for="atuacao">Área de Atuação</label> <br>
+            Fullstack <input type="radio" name="atuacao" value="stack" required> 
+            Cloud <input type="radio" name="atuacao" value="cloud" required>
+            Ambos <input type="radio" name="atuacao" value="ambos" required>
+        </fieldset>
+        <br>
+        <button type="reset">Limpar</button>        
+        <button type="submit">login</button>
+    </form>
+</body>
+</html>
